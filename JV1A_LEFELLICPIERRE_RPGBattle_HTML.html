@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>UI RPG BATTLE</title>
+        
+        <style type="text/css">
+
+            #monstresEtPersos  
+                {
+                color:white;
+                display:flex;
+                justify-content:space-evenly;
+                align-items:center;
+                height: 600px;
+                }
+
+            #monstres
+                {
+                display:flex;
+                flex-direction: column;
+                }
+
+            #perso1, #perso2, #perso3, #perso4,
+            #monstre1, #monstre2, #monstre3
+                {
+                display:flex;
+
+                }
+
+            .statspersos, .statsmonstres
+                {
+                display:flex;
+                flex-direction:row;
+                align-items:center;
+                }
+
+            .pvpersos,.pvmonstres, .mana 
+                {
+                margin:5px
+                }
+
+            .pvpersos
+                {
+                font-size:150%;
+                color:green
+                }
+
+            .pvmonstres
+                {
+                font-size:150%;
+                color:red
+                }
+
+            .mana
+                {
+                font-size:150%;
+                color:blue
+                }
+
+            #interface
+                {
+                color:white;
+                height: 295px;
+                background-color: green;
+                display:flex;
+                justify-content:space-evenly;
+                align-items: center;
+                }
+
+            body{background-image: url("background.png");}
+
+        </style>
+
+        <script src="JV1A_LEFELLICPIERRE_RPGBattle_JAVA.js" async></script>        
+
+    </head>
+
+
+
+    <body>
+
+        <div id="monstresEtPersos">
+
+            <div id="monstres">
+
+
+
+                <div id="monstre1">
+                    <div id="statsmonstre1" class="statsmonstres">
+                        <div>PV</div>
+                        <div id="pvmonstre1" class="pvmonstres">100</div>
+                    </div>
+                    <img src="monstre1.png" id="imgmonstre1" alt="Monstre1">
+                </div>
+
+
+
+                <div id="monstre2">
+                    <div id="statsmonstre2" class="statsmonstres">
+                        <div>PV</div>
+                        <div id="pvmonstre2" class="pvmonstres">100</div>
+                    </div>
+                    <img src="monstre1.png" id="imgmonstre2" alt="Monstre2">
+                </div>
+
+
+
+                <div id="monstre3">
+                    <div id="statsmonstre3" class="statsmonstres">
+                        <div>PV</div>
+                        <div id="pvmonstre3" class="pvmonstres">100</div>
+                    </div>
+                    <img src="monstre1.png" id="imgmonstre3" alt="Monstre3">
+                </div>
+
+            </div>
+                
+
+
+            <div id="persos">
+
+
+
+                <div id="perso1">
+                    <img src="perso1.png" id="imgperso1" alt="Perso1">
+                    <div id="statsperso1" class="statspersos">
+                        <div>PV</div>
+                        <div id="pvperso1" class="pvpersos">100</div>
+                        <div>MANA</div>
+                        <div id="manaperso1" class="mana">100</div>
+                    </div>
+                </div>
+
+
+
+                <div id="perso2">
+                    <img src="perso1.png" id="imgperso2" alt="Perso2">
+                    <div id="statsperso2" class="statspersos">
+                        <div>PV</div>
+                        <div id="pvperso2" class="pvpersos">100</div>
+                        <div>MANA</div>
+                        <div id="manaperso2" class="mana">100</div>
+                    </div>
+                </div>
+
+
+
+                <div id="perso3">
+                    <img src="perso1.png" id="imgperso3" alt="Perso3">
+                    <div id="statsperso3" class="statspersos">
+                        <div>PV</div>
+                        <div id="pvperso3" class="pvpersos">100</div>
+                        <div>MANA</div>
+                        <div id="manaperso3" class="mana">100</div>
+                    </div>
+                </div>
+
+
+
+                <div id="perso4">
+                    <img src="perso1.png" id="imgperso4" alt="Perso4">
+                    <div id="statsperso4" class="statspersos">
+                        <div>PV</div>
+                        <div id="pvperso4" class="pvpersos">100</div>
+                        <div>MANA</div>
+                        <div id="manaperso4" class="mana">100</div>
+                    </div>
+                </div>
+
+
+            
+            </div>
+
+        </div>
+
+        <div id="interface">
+            <div id="actions">
+                <div id="attaque">Attaque</div>
+                <div id="defense">Défense</div>
+                <div id="special">Spécial</div>
+            </div>
+            <div id="dialogue">
+                dialogue
+            </div>
+        </div>
+
+    </body>
+
+</html>

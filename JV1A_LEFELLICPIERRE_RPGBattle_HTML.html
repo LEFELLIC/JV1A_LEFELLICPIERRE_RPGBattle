@@ -38,9 +38,14 @@
                 align-items:center;
                 }
 
-            .pvpersos,.pvmonstres, .mana 
+            .pvpersos,.pvmonstres, .mana, .noms
                 {
                 margin:5px
+                }
+
+            .noms
+                {
+                font-size: 150%;
                 }
 
             .pvpersos
@@ -58,17 +63,47 @@
             .mana
                 {
                 font-size:150%;
-                color:blue
+                color:skyblue;
                 }
 
+            #hugo
+                {
+                color: brown;
+                }
+
+            #martin
+                {
+                color: lightgreen;
+                }
+            
+            #alexis
+                {
+                color: lightpink;
+                }
+
+            #pierre
+                {
+                color: orange;
+                }
+            
             #interface
                 {
+                font-size: 200%;
                 color:white;
                 height: 295px;
-                background-color: green;
+                background-color:blue;
                 display:flex;
                 justify-content:space-evenly;
                 align-items: center;
+                }
+
+            #actions
+                {
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 295px;
+                background-color: blueviolet;
                 }
 
             body{background-image: url("background.png");}
@@ -128,6 +163,7 @@
                 <div id="perso1">
                     <img src="perso1.png" id="imgperso1" alt="Perso1">
                     <div id="statsperso1" class="statspersos">
+                        <div id="hugo" class="noms">Hugo</div>
                         <div>PV</div>
                         <div id="pvperso1" class="pvpersos">100</div>
                         <div>MANA</div>
@@ -140,6 +176,7 @@
                 <div id="perso2">
                     <img src="perso1.png" id="imgperso2" alt="Perso2">
                     <div id="statsperso2" class="statspersos">
+                        <div id="martin" class="noms">Martin</div>
                         <div>PV</div>
                         <div id="pvperso2" class="pvpersos">100</div>
                         <div>MANA</div>
@@ -152,6 +189,7 @@
                 <div id="perso3">
                     <img src="perso1.png" id="imgperso3" alt="Perso3">
                     <div id="statsperso3" class="statspersos">
+                        <div id="alexis" class="noms">Alexis</div>
                         <div>PV</div>
                         <div id="pvperso3" class="pvpersos">100</div>
                         <div>MANA</div>
@@ -164,6 +202,7 @@
                 <div id="perso4">
                     <img src="perso1.png" id="imgperso4" alt="Perso4">
                     <div id="statsperso4" class="statspersos">
+                        <div id="pierre" class="noms">Pierre</div>
                         <div>PV</div>
                         <div id="pvperso4" class="pvpersos">100</div>
                         <div>MANA</div>
@@ -184,7 +223,7 @@
                 <div id="special">Spécial</div>
             </div>
             <div id="dialogue">
-                dialogue
+                Dialogue
             </div>
         </div>
 
